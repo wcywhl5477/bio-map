@@ -1,0 +1,190 @@
+/* 全局重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'PingFang SC', sans-serif;
+}
+
+body {
+  background-color: #F8F9FA;
+  color: #212529;
+  line-height: 1.5;
+}
+
+/* 主容器样式 */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头部样式 */
+.header {
+  background-color: #2D6A4F;
+  color: white;
+  padding: 16px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-left: 8px;
+}
+
+/* 应用主体（上传面板+地图） */
+.app-container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 64px);
+}
+
+/* 上传面板 */
+.upload-panel {
+  width: 420px;
+  padding: 24px;
+  background-color: white;
+  border-right: 1px solid #E9ECEF;
+  overflow-y: auto;
+}
+
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D6A4F;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #DEE2E6;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #95D5B2;
+  box-shadow: 0 0 0 3px rgba(149, 213, 178, 0.2);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 按钮样式 */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #2D6A4F;
+  color: white;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background-color: #1B4332;
+  transform: translateY(-2px);
+}
+
+/* 地图容器 */
+.map-container {
+  flex: 1;
+  height: 100%;
+}
+
+/* 地图弹窗样式 */
+.bio-list-popup {
+  padding: 16px;
+  min-width: 200px;
+}
+
+.bio-list-popup h4 {
+  color: #2D6A4F;
+  font-size: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #E9ECEF;
+  padding-bottom: 8px;
+}
+
+.bio-item {
+  padding: 8px 0;
+  cursor: pointer;
+  color: #495057;
+  transition: color 0.2s ease;
+}
+
+.bio-item:hover {
+  color: #2D6A4F;
+  font-weight: 600;
+}
+
+/* 生物详情弹窗 */
+.bio-detail-popup {
+  padding: 20px;
+  width: 320px !important;
+}
+
+.bio-detail-popup h3 {
+  color: #2D6A4F;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.bio-type-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #95D5B2;
+  color: #2D6A4F;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.bio-detail-popup img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.bio-desc {
+  color: #6C757D;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.bio-meta {
+  font-size: 12px;
+  color: #ADB5BD;
+  margin-top: 12px;
+}
